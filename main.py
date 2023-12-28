@@ -86,7 +86,7 @@ def on_button_click():
     elif "hava durumu" in command:
         speak("Hangi şehirin hava durumunu öğrenmek istersiniz?")
         city_command = recognize_speech()
-        api_key = "669eb036ecac673b269c27c70b2d387d"
+        api_key = "WEATHER APİ KEY"
         weather_result = get_weather(api_key, city_command)
         speak(weather_result)
         print("Şuan ki hava durumu "+weather_result)
